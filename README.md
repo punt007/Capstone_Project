@@ -10,7 +10,7 @@ Author - Ponparis Gurdsapsri
 * **Objective:** 
     + To build AI model to detect and locate where (which seconds) the specified scene is on the subject video (Clasify whether it is or it is not)
 * **Data:**  
-    + Image file for model training and testing are scraped and downloaded from internet. Original 251 pictures has been manually annotated. Those image then have been processed via augmented technique to increase for trained/tested the model up to 13,420 pictures  
+    + Image file for model training and testing are scraped and downloaded from internet. Original 244 pictures has been manually annotated. Those image then have been processed via augmented technique to increase for trained/tested the model up to 8,052 pictures  
     + Video file for model deployment testing are obtained from True ID channel used video download technique
 * **Metric:**
     + Classification: Accuracy
@@ -67,7 +67,7 @@ First|0.583|0.667|0.75|
 Secon|0.738|0.583|0.50|
 Third|0.742|0.750|0.75|
 
-The third model provides best performance. So I selected the third model to be used for deployment test.
+The third model is the least over-under fitting. So I selected the third model to be used for deployment test.
 
 ### Deployment test
 As stated in the objective. The input will be in video format, then the model will locate where ambulance scene is at. To do so, there will be some transformation from video to image before running them into prediction model. The below are the process.
