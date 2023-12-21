@@ -63,11 +63,11 @@ As mentioned in objective, the metric used for evaluation will be the accuracy s
 
 Model#|Train accuracy score|Test accuracy score|4 images accuracy|
 |---|---|---|---|
-First|0.648|0.583|0.25|
-Secon|0.4975|0.512|0.50|
-Third|0.512|0.515|0.50|
+First|0.583|0.667|0.75|
+Secon|0.738|0.583|0.50|
+Third|0.742|0.750|0.75|
 
-The third model is the least over-under fitting. So I selected the third model to be used for deployment test.
+The third model provides best performance. So I selected the third model to be used for deployment test.
 
 ### Deployment test
 As stated in the objective. The input will be in video format, then the model will locate where ambulance scene is at. To do so, there will be some transformation from video to image before running them into prediction model. The below are the process.
